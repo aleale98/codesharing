@@ -1,0 +1,204 @@
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#lang-sel {
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+    display: none;
+
+}
+
+
+/* class applies to select element itself, not a wrapper element */
+.lang {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 50%;
+    max-width: 100%; /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    background-color: #fff;
+    display: none;
+}
+
+/* Hide arrow icon in IE browsers */
+.lang::-ms-expand {
+    display: none;
+}
+
+/* Hover style */
+.lang:hover {
+    border-color: #000;
+}
+
+/* Focus style */
+.lang:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+/* Set options to normal weight */
+.lang option {
+    font-weight: normal;
+}
+
+/* Disabled styles */
+.lang:disabled {
+    color: #6D6D6D;
+linear-gradient(to bottom, #ffffff 0 %, #e5e5e5 100 %);
+}
+
+.lang:disabled:hover, .lang[aria-disabled=true] {
+    border-color: #aaa;
+}
+
+#confirm-lang {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    display: none;
+}
+
+#util {
+    width: 15%;
+    max-width: 15%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+main{
+    width: 85%;
+}
+
+form {
+    width: 70%;
+    display: none;
+}
+
+#editor {
+    /** Setting height is also important, otherwise editor wont showup**/
+    height: 60%;
+    width: 60%;
+    position: relative;
+}
+
+#prof-pic {
+    border-radius: 50%;
+    height: 70%;
+
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+}
+
+.instruction {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 25pt;
+    margin: auto;
+}
+
+.signupbtn {
+    width: 45%;
+    margin-left: 10%;
+    border: 1px solid #FFFFFF;
+}
+
+.cancelbtn {
+    width: 45%;
+    margin-left: 10%;
+    background-color: red;
+}
+
+.customAlert {
+    opacity: 1;
+}
+
+#bins {
+    margin-top: 5%;
+}
+
+#bins li {
+    margin-top: 2%;
+    border: 1px solid black;
+    font-size: 20pt;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+#content-list {
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#content-list ul {
+    padding: 0;
+}
+
+#insert-code {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insert-code button {
+    margin-left: -1%;
+}
+
+#buttons {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#row1, #row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#row1 button, #row2 button {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    #prof-pic {
+        display: none;
+    }
+
+    #profile button {
+        width: 100%;
+    }
+
+    #profile {
+        padding-top: 100%;
+    }
+
+}
+
+

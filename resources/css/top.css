@@ -1,0 +1,50 @@
+header{
+    height: 9%;
+}
+
+#login, #signup, #create{
+    float: right;
+    width: 8%;
+    height: 85%;
+    border: 3px solid #FFFFFF;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#create{
+    display: none;
+}
+
+#logo{
+    float: left;
+    width: 10%;
+    height: 100%;
+    background-image: url("../img/btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 720px) {
+    #login, #signup, #create{
+        width: 15%;
+        font-size: 1em;
+        padding-top: 3%;
+    }
+
+    #logo{
+        width: 15%;
+    }
+}

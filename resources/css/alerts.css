@@ -1,0 +1,13 @@
+.customAlert {
+    background-color: grey;
+    opacity: 0.4;
+    width: 50%;
+    height: auto;
+    border: 3px solid #00FF00;
+    padding: 10px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    font-size: 14pt;
+    transform: translate(-50%, -50%);
+}
